@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inner_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/sharemenubg"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Back"
+            android:textColor="#ff4e5466" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="MyPadosi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff4e5466"
+            android:textSize="15.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/tabBarm"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/menubg1"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip" >
+
+            <ImageView
+                android:id="@+id/BtnSlidem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="0px"
+                android:padding="0px"
+                android:src="@drawable/menuicon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:addStatesFromChildren="true"
+        android:background="@android:drawable/edit_text"
+        android:baselineAligned="false"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/button_search"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/ic_menu_search"
+            android:contentDescription="searchname"
+            android:padding="2dip" />
+
+        <EditText
+            android:id="@+id/input_search_query"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/button_search"
+            android:background="@null"
+            android:hint="searchname"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:singleLine="true"
+            android:textSize="15sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mypadosimessagelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+</RelativeLayout>

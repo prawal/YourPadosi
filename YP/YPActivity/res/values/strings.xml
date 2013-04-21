@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">HPSlide</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">YOurPadosi</string>
+<string name="intro">Capture a picture to crop!</string>
+<string name="listAlertMessage">No wall Found!</string>
+<string name="picture">Picture</string> <string name="capture">Launch Camera</string>
+</resources>

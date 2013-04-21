@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:gravity="fill_horizontal" >
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/logoutbutton"
+        android:onClick="logout" />
+
+    <ImageView
+        android:id="@+id/imageTypeuser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/paya" />
+
+    <Button
+        android:id="@+id/padosiwallbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/padosiwallbutton"
+        android:onClick="padosiwallbutton" />
+
+    <Button
+        android:id="@+id/myPadosi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/padosiwallbutton"
+        android:background="@drawable/mypadosibutton"
+        android:onClick="myPadosi" />
+
+    <Button
+        android:id="@+id/sendmessagebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myPadosi"
+        android:background="@drawable/sendmessagebutton"
+        android:onClick="sendmessagebutton" />
+
+</RelativeLayout>

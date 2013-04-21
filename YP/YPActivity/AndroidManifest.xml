@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hpslide"
+    android:versionCode="1"
+      android:versionName="1.0">
+  
+ <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="11" />
+ <supports-screens android:xlargeScreens="true" />
+   <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.CAMERA" />
+ 
+    <uses-feature android:name="android.hardware.camera" />  
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<!--     <uses-permission android:name="android.permission.INSTALL_PACKAGES" /> -->
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+
+
+    <application
+       
+        android:icon="@drawable/yp_icon"
+        android:label="@string/app_name"
+        android:persistent="true"
+        
+          android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".YPActivity"
+            android:label="@string/title_activity_main"
+            android:configChanges="orientation"
+              android:launchMode="singleTop"
+              android:screenOrientation="portrait"
+                 android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       <activity  android:name=".YPWall" android:screenOrientation="portrait"/>
+       <activity android:name = "MessagePost" android:screenOrientation="portrait"></activity>
+        <activity android:name="Message" android:screenOrientation="portrait"></activity>
+ <activity android:name="MyPadosi" android:screenOrientation="portrait"/>
+<activity android:name= "SharePhoto" android:screenOrientation="portrait"></activity>  
+<activity android:name = "CommentshowPadosi" android:screenOrientation="portrait"></activity>
+<activity android:name= "Share" android:screenOrientation="portrait"></activity>
+<activity android:name = "MyCancel" android:screenOrientation="portrait"></activity>
+<activity android:name="MyGallery" android:screenOrientation="portrait"></activity>
+<activity android:name="FullImageActivity" android:screenOrientation="portrait"></activity>
+<activity android:name= "ShootAndCropActivity" android:screenOrientation="portrait"></activity>
+<activity android:name= "MypadosiDetails" android:screenOrientation="portrait"></activity>
+<activity android:name = "CommentPadosi" android:screenOrientation="portrait"/>
+<activity android:name = "likeAct" android:screenOrientation="portrait"/>
+    </application>
+    
+
+</manifest>

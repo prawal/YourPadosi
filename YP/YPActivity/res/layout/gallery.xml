@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inner_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" >
+
+    <RelativeLayout
+        android:id="@+id/MenuB"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menubg1"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <Button 
+            android:id="@+id/Back2"
+         style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Back" 
+            android:background="@drawable/untitled2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/MenuB"
+        android:background="@drawable/sharemenubg"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="MyPadosi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff4e5466"
+            android:textSize="15.0sp" />
+
+        <Button
+            android:id="@+id/backMain"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:text="Back"
+            android:textColor="#ff4e5466" />
+    </RelativeLayout>
+
+	<ImageView
+			android:id="@+id/imgView"
+			android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="wrap_content"></ImageView>
+</RelativeLayout>

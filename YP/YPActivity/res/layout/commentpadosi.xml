@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inner_content"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="top" >
+
+    <RelativeLayout
+        android:id="@+id/tabBar5"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menubg1"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <ImageView
+            android:id="@+id/BtnSlide5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0px"
+            android:padding="0px"
+            android:src="@drawable/menuicon" />
+    </RelativeLayout>
+
+ <!--    <EditText
+        android:id="@+id/body1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#ff4e5466" /> -->
+
+    <EditText
+        android:id="@+id/subject1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="50dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tabBar5"
+        android:background="@drawable/sharemenubg"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Comment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff4e5466"
+            android:textSize="14.0sp" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/cancelbutton"
+            android:onClick="cancelButton"
+            android:textColor="#ff4e5466" />
+
+        <Button
+            android:id="@+id/postComment"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:onClick="onClickPost2"
+            android:text="Post"
+            android:textColor="#ff4e5466" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Commentpadosimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_weight="0.95" />
+
+    <TextView
+        android:id="@+id/Commentpadosiname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Commentpadosimage"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/Commentpadosimage"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ViewFlipper
+       android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"> >
+    </ViewFlipper>
+
+    <RelativeLayout
+        android:id="@+id/tabBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/menubg1"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <ImageView
+            android:id="@+id/BtnSlide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0px"
+            android:padding="0px"
+            android:src="@drawable/menuicon" />
+    </RelativeLayout>
+ <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="312dp"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tabBar"
+        android:background="@drawable/pulse"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <Button
+            android:id="@+id/ShareIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/share_btn"
+            android:onClick="ShareIcon" />
+
+    </RelativeLayout>
+
+ <ListView
+     android:id="@+id/listwall"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_below="@+id/relativeLayout1" >
+ </ListView>
+
+</RelativeLayout>

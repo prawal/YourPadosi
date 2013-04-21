@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="302dp"
+        android:background="@drawable/bg_grey" >
+
+        <ImageView
+            android:id="@+id/iv_productImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/paya" />
+
+        <TextView
+            android:id="@+id/tv_productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button1"
+            android:layout_alignTop="@+id/iv_productImage"
+            android:layout_toRightOf="@+id/iv_productImage"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_productPubDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_productImage"
+            android:layout_alignRight="@+id/commentlikebuttonid"
+            android:layout_toRightOf="@+id/iv_productImage"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="268dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/iv_productImage"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/grey_box" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg2"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/likeid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignLeft="@+id/button1"
+            android:text="Like" />
+
+        <TextView
+            android:id="@+id/unlikeid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignLeft="@+id/button1"
+            android:text="unLike" />
+
+        <TextView
+            android:id="@+id/tv_productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_productImage"
+            android:layout_toRightOf="@+id/likeid"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/iv_productImage2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_productPrice"
+            android:layout_toRightOf="@+id/tv_productPrice"
+            android:src="@drawable/paya" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_productImage2"
+            android:layout_toLeftOf="@+id/iv_productImage2"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/commenttopado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignRight="@+id/iv_productImage2"
+            android:text="Comment" />
+
+        <TextView
+            android:id="@+id/tv_productComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignRight="@+id/button1"
+            android:text="T"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/tv_productLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_marginLeft="52dp"
+            android:layout_toRightOf="@+id/commenttopado"
+            android:text="T1" />
+
+        <TextView
+            android:id="@+id/commentlikebuttonid"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/tv_productLike"
+            android:background="@drawable/comment_icon" />
+
+        <TextView
+            android:id="@+id/likebuttonid"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/like_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

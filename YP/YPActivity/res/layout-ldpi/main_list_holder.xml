@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="302dp"
+        android:background="@drawable/bg_grey" >
+
+        <ImageView
+            android:id="@+id/iv_productImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/paya" />
+
+        <TextView
+            android:id="@+id/tv_productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button1"
+            android:layout_alignTop="@+id/iv_productImage"
+            android:layout_toRightOf="@+id/iv_productImage"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_productPubDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_productImage"
+            android:layout_alignRight="@+id/tv_productTitle"
+            android:layout_toRightOf="@+id/iv_productImage"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="268dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/iv_productImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/grey_box" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg2"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/likeid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignLeft="@+id/button1"
+            android:text="Like" 
+                android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/unlikeid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignLeft="@+id/button1"
+            android:text="unLike"
+                android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/iv_productImage2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/likeid"
+            />
+
+        <TextView
+            android:id="@+id/tv_productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_productImage2"
+            android:layout_alignRight="@+id/tv_category"
+            android:layout_toRightOf="@+id/likeid"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button2"
+            android:layout_below="@+id/iv_productImage2"
+            android:layout_toRightOf="@+id/likeid"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/commenttopado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_toRightOf="@+id/iv_productImage2"
+            android:text="Comment"
+                android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/likebuttonid"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+         android:layout_marginTop="269dp"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@+id/commenttopado"
+            android:background="@drawable/like_icon" />
+
+        <TextView
+            android:id="@+id/tv_productLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignRight="@+id/tv_category"
+            android:layout_marginRight="28dp"
+            android:text="T1" />
+
+        <TextView
+            android:id="@+id/tv_productComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignRight="@+id/button1"
+            android:layout_marginRight="8dp"
+            android:text="T2" />
+
+        <TextView
+            android:id="@+id/commentlikebuttonid"
+            android:layout_width="15dp"
+            android:layout_height="16dp"
+           android:layout_marginTop="270dp"
+            android:layout_alignRight="@+id/tv_category"
+            android:background="@drawable/comment_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

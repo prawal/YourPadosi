@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ViewFlipper
+       android:id="@+id/page1"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"> >
+    </ViewFlipper>
+
+    <RelativeLayout
+        android:id="@+id/tabBa"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/menubg1"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+  <ImageView
+            android:id="@+id/BtnSlide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0px"
+            android:padding="0px"
+            android:src="@drawable/menuicon" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="312dp"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tabBa"
+        android:background="@drawable/menubg21"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <Button
+            android:id="@+id/sharePhotoIcon1"
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="90dp"
+            android:onClick="onClick6"
+            android:background="@drawable/sharephotoicon" />
+
+        <Button
+            android:id="@+id/ShareIcon1"
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="64dp"
+            android:layout_toLeftOf="@+id/sharePhotoIcon1"
+            android:background="@drawable/shareicon"
+            android:onClick="onClick5" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
